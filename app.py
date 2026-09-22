@@ -12,8 +12,8 @@ st.write("Hello P Databricks!")
 name = st.text_input("Enter your name")
 
 if name:
-   # st.success(f"Hello, {name}!")
-   st.success(f"Hello, ! Welcome to the Databricks app.")
+    st.success(f"Hello, {name}!")
+  
 
 st.divider()
 st.write("This app is running with Python and Streamlit.")

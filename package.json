@@ -1,0 +1,21 @@
+{
+  "name": "demo_tides_databricks",
+  "version": "1.0.0",
+  "description": "A simple Databricks App built with Python and Streamlit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prelangiwork/demo_tides_databricks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/prelangiwork/demo_tides_databricks/issues"
+  },
+  "homepage": "https://github.com/prelangiwork/demo_tides_databricks#readme"
+}
