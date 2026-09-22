@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 st.title("My Databricks App")
-st.write("Hello from Databricks!")
+st.write("Hello P Databricks!")
 
 name = st.text_input("Enter your name")
 
