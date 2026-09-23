@@ -26,8 +26,9 @@ if not WAREHOUSE_ID:
     )
     st.stop()
 
-cfg = Config()
-HTTP_PATH = f"/sql/1.0/warehouses/{WAREHOUSE_ID}"
+cfg = Config(profile=os.getenv("DATABRICKS_CONFIG_PROFILE"))
+#HTTP_PATH = f"/sql/1.0/warehouses/{WAREHOUSE_ID}"
+HTTP_PATH = "/sql/1.0/warehouses/1b9890f8e0eab04b"
 
 
 def run_query(query: str) -> pd.DataFrame:
