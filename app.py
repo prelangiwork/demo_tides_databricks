@@ -39,12 +39,14 @@ def run_query(query: str) -> pd.DataFrame:
     ) as connection:
         with connection.cursor() as cursor:
             cursor.execute(query)
+            value = cursor.connection.session
+            print(f"value: {value}  query: {query}  ")
             columns = [col[0] for col in cursor.description]
             rows = cursor.fetchall()
             return pd.DataFrame(rows, columns=columns)
 
 
-@st.cache_data(ttl=600, show_spinner="Loading catalogs...")
+@st.cache_data(ttl=600, show_spinner="Loading catalogs testing...")
 def list_catalogs() -> list[str]:
     return sorted(run_query("SHOW CATALOGS")["catalog"].tolist())
 
