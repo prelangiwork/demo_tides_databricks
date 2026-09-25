@@ -3,14 +3,14 @@
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 
 bundle:
-  name: demo_tides_databricks
+  name: devenvironment 
 
 targets:
   dev:
     mode: development
     default: true
     workspace:
-      host: https://dbc-72f62ff3-be0e.cloud.databricks.com
+      host: https://dbc-570a7683-9e00.cloud.databricks.com
 
   ## Optionally, there could be 'staging' or 'prod' targets here.
   #
